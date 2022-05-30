@@ -1,0 +1,50 @@
+.logo{
+    margin-bottom: 1;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../icon/burger.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.title{
+    margin: 50px;
+    text-align: center;
+}
+
+.picture{
+    width: 250px;
+    height: 200px;
+    
+}
+
+.del{
+    position: absolute;
+    right: 30px;
+    background-color: brown;
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.del:hover{
+    background-color: chocolate;
+}
+
+li{
+    display: flex;
+}
+
