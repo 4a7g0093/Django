@@ -12,3 +12,8 @@ class Burger(models.Model):
     priceM = models.DecimalField(max_digits=4,decimal_places=0)
     priceL = models.DecimalField(max_digits=4,decimal_places=0)
     bImage = models.URLField()
+    
+class Drinks(models.Model):
+    name = models.CharField(max_length=120)
+    drice = models.DecimalField(max_digits=4,decimal_places=0)
+    dImage = models.URLField()

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Pizza,Burger
+from .models import Pizza,Burger,Drinks
 # Create your views here.
 
 def index(requset):
@@ -16,3 +16,8 @@ def burger(request):
     burgers = Burger.objects.all()
     ctx = {'burgers':burgers,'active_link': 'burger'}
     return render(request,'food/burger.html',ctx)
+
+def drink(request):
+    drinks = Drinks.objects.all()
+    ctx = {'drinks':drinks,'active_link': 'drink'}
+    return render(request,'food/drinks.html',ctx)
